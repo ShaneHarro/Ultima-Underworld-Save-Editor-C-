@@ -55,7 +55,6 @@ public:
     const std::string getPlayerStats (const char decryptedData[]) const;
 
 private:
-    std::ifstream saveFileRead;
     std::string saveFileName;
     const int bytesLength;
     unsigned char xorKey;
