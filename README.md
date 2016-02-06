@@ -1,18 +1,22 @@
 Ultima Underworld Save Editor - Author: Shane Harrison
+==========================
 
-Description: A save game editor written in C++ for Ultima Underworld. Tested and working on Linux.
-Compile with: g++ -o UUSE UUSE.cpp ultimaio.cpp ultimaio.h -std=c++11
+A save game editor written in C++ for Ultima Underworld. I am not responsible for loss of data if you use this utility. Use at your own risk!
 
-I am not responsible for loss of data if you use this utility. Use at your own risk!
+Compile with
+-----
+g++ -o UUSE UUSE.cpp ultimaio.cpp ultimaio.h -std=c++11
 
-*****************
-*Documentation: *
-*****************
-**************************************************************************************************************************************************************
-Like some other MS-DOS games of their day, Ultima Underworlds save files have the players data "encoded" or "encrypted" if you will,
-using a simple XOR encoding. The first byte of PLAYER.DAT is the "XOR Key" value which tells us how to decode the rest of the file.
-For each subsequent byte, we add 0x03 to the XOR key, and then perform an XOR bitwise operation with the current byte. An example
-follows. Here is the first 3 bytes of a PLAYER.DAT file:
+
+
+Usage
+-----
+./UUSE PLAYER.DAT
+
+
+Documentation
+-----
+Like some other MS-DOS games of their day, Ultima Underworlds save files have the players data "encoded" or "encrypted" if you will, using a simple XOR encoding. The first byte of PLAYER.DAT is the "XOR Key" value which tells us how to decode the rest of the file. For each subsequent byte, we add 0x03 to the XOR key, and then perform an XOR bitwise operation with the current byte. An examplefollows. Here is the first 3 bytes of a PLAYER.DAT file:
 
 F9 AF 97 63 6B
 
@@ -23,12 +27,11 @@ F9 AF 97 63 6B
 
 etc...
 
-**************************************************************************************************************************************************************
-*****************
-*Offsets:       *
-*****************
 
-Key            Offset
+Offsets:       
+-----
+
+Key         |   Offset
 -------------------------
 XOR value   |  0x00
 -------------------------
