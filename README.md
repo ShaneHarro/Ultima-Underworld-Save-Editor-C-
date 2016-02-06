@@ -3,6 +3,8 @@ Ultima Underworld Save Editor - Author: Shane Harrison
 Description: A save game editor written in C++ for Ultima Underworld. Tested and working on Linux.
 Compile with: g++ -o UUSE UUSE.cpp ultimaio.cpp ultimaio.h -std=c++11
 
+I am not responsible for loss of data if you use this utility. Use at your own risk!
+
 *****************
 *Documentation: *
 *****************
