@@ -77,8 +77,9 @@ Appraise    |  0x33
 Swimming    |  0x34
 -------------------------
 
-
 Many thanks to these people for their documentation:
 
 ftp://files.chatnfiles.com/Infomagic-Windows/Infomagic-Games-for-Daze-Summer-95-1/EDITORS/UWEDITOR/UWEDITOR.TXT
+
+http://bootstrike.com/Ultima/Online/uwformat.php
 
