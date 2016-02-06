@@ -2,7 +2,6 @@
 #define ULTIMAIO_H
 
 #include <fstream>
-#include <vector>
 #include <string>
 
 class UltimaIO {
