@@ -16,7 +16,7 @@ Usage
 
 Documentation
 -----
-Like some other MS-DOS games of their day, Ultima Underworlds save files have the players data "encoded" or "encrypted" if you will, using a simple XOR encoding. The first byte of PLAYER.DAT is the "XOR Key" value which tells us how to decode the rest of the file. For each subsequent byte, we add 0x03 to the XOR key, and then perform an XOR bitwise operation with the current byte. An examplefollows. Here is the first 3 bytes of a PLAYER.DAT file:
+Like some other MS-DOS games of their day, Ultima Underworlds save files have the players data "encoded" or "encrypted" if you will, using a simple XOR encoding. The first byte of PLAYER.DAT is the "XOR Key" value which tells us how to decode the rest of the file. For each subsequent byte, we add 0x03 to the XOR key, and then perform an XOR bitwise operation with the current byte. An example follows. Here is the first 5 bytes of a PLAYER.DAT file:
 
 F9 AF 97 63 6B
 
